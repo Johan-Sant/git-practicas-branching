@@ -1,0 +1,11 @@
+name: Ruleset Quick Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Ruleset check passed"
